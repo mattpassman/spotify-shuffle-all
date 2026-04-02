@@ -15,6 +15,9 @@ The two-script approach (`sync_csv.py` → `push_playlist.py`) is useful for inc
 ## Setup
 
 ### 1. Install dependencies
+
+Requires **Python 3.8+**.
+
 ```bash
 pip install -r requirements.txt
 ```
