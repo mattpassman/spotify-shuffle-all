@@ -56,7 +56,17 @@ SPOTIFY_USERNAME=your_spotify_username
 
 Your Spotify username can be found at [https://www.spotify.com/account/overview/](https://www.spotify.com/account/overview/) — it's the username field, not your display name.
 
-### 5. Run
+### 5. Customize the playlist name (optional)
+
+The playlist will be created as **🎵 Mega Library** by default. To change it, open the script you plan to run and edit the `PLAYLIST_NAME` variable near the top:
+
+```python
+PLAYLIST_NAME = "🎵 Mega Library"   # Change this to whatever you like
+```
+
+If you rename it after already running the script, a new playlist will be created rather than updating the old one.
+
+### 6. Run
 
 ```bash
 # All-in-one
