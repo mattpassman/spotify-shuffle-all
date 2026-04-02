@@ -179,11 +179,12 @@ def write_csv(liked, album_tracks, playlist_tracks):
 
     filename = "spotify_library.csv"
     with open(filename, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=["title", "artist", "album", "liked", "saved_album", "in_playlist"])
+        writer = csv.DictWriter(f, fieldnames=["track_id", "title", "artist", "album", "liked", "saved_album", "in_playlist"])
         writer.writeheader()
         for tid in sorted(all_ids, key=lambda x: all_meta[x]["title"].lower()):
             m = all_meta[tid]
             writer.writerow({
+                "track_id":    tid,
                 "title":       m["title"],
                 "artist":      m["artist"],
                 "album":       m["album"],
