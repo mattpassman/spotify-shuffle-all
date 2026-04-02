@@ -4,13 +4,12 @@ Spotify CSV → Mega Playlist Push
 Reads spotify_library.csv and pushes all track IDs to your
 mega playlist on Spotify. Only adds tracks not already there.
 
-Run spotify_sync_csv.py first to refresh the CSV, then run this.
+Run sync_csv.py first to refresh the CSV, then run this.
 Or just run this on its own if the CSV is already up to date —
 it makes very few API requests (just playlist read + write).
 
-SETUP:
-1. pip install spotipy
-2. Fill in CLIENT_ID and CLIENT_SECRET below
+SETUP: See README.md
+RUN:   python push_playlist.py
 """
 
 import csv

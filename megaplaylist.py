@@ -4,12 +4,8 @@ Spotify Mega Playlist Creator
 Combines ALL songs from your library (saved albums + playlists) and Liked Songs
 into one mega playlist, with no duplicates.
 
-SETUP:
-1. pip install spotipy
-2. Go to https://developer.spotify.com/dashboard
-3. Create an app, set redirect URI to: http://localhost:8888/callback
-4. Fill in your CLIENT_ID and CLIENT_SECRET below
-5. Run: python spotify_mega_playlist.py
+SETUP: See README.md
+RUN:   python megaplaylist.py
 """
 
 import csv

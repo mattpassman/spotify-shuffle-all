@@ -5,11 +5,10 @@ Fetches all your liked songs, saved albums, and playlist tracks
 and writes them to spotify_library.csv. No playlist writes.
 
 Run this whenever you want to refresh your library snapshot.
-Then run spotify_push_playlist.py to push changes to Spotify.
+Then run push_playlist.py to push changes to Spotify.
 
-SETUP:
-1. pip install spotipy
-2. Fill in CLIENT_ID and CLIENT_SECRET below
+SETUP: See README.md
+RUN:   python sync_csv.py
 """
 
 import csv
@@ -167,7 +166,7 @@ def main():
    Total tracks : {len(all_ids)}
    CSV          : {CSV_FILE}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Run spotify_push_playlist.py to push to Spotify.
+Run push_playlist.py to push to Spotify.
 """)
 
 
