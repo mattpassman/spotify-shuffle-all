@@ -88,5 +88,6 @@ A `.cache` file is saved locally so you stay logged in for future runs.
 
 - Duplicate tracks are automatically deduplicated across all sources
 - Re-running is safe — only tracks not already in the playlist are added
+- The script will try to create the playlist automatically, but Spotify's API may block this for apps in Development Mode. If it fails, create an empty playlist manually in Spotify with the exact name matching `PLAYLIST_NAME`, then re-run — the script will find it and fill it in
 - The playlist is created as private by default; you can make it public in Spotify afterward
 - `spotify_library.csv` is a local snapshot of your library (title, artist, album, and which sources each track came from)
