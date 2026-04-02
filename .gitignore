@@ -1,0 +1,7 @@
+.env
+.cache*
+spotify_library.csv
+.DS_Store
+__pycache__/
+*.pyc
+.vscode/
